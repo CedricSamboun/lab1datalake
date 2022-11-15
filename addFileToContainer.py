@@ -3,7 +3,7 @@ from azure.storage.blob import BlobServiceClient
 storage_account_key = "ZDlcXuY0PRswWX+bBwrLkMeEO9Kq38xNIB//lY/2Zk/DVHlhK0liV0VpcB0QJ132/v5azvygI4/8+ASt7Hi9Gw=="
 storage_account_name ="lab1ced"
 connection_string = "DefaultEndpointsProtocol=https;AccountName=lab1ced;AccountKey=ZDlcXuY0PRswWX+bBwrLkMeEO9Kq38xNIB//lY/2Zk/DVHlhK0liV0VpcB0QJ132/v5azvygI4/8+ASt7Hi9Gw==;EndpointSuffix=core.windows.net"
-container_name = "newcontainer"
+container_name = input("Enter container name : ")
 
 def uploadToBlobStorage(file_path, file_name):
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
